@@ -1,11 +1,14 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
+	<!--TO BE CHANGED BETWEEN RELEASES-->
+	<PackageReleaseNotes>Initial Release</PackageReleaseNotes>
+    <Version>0.0.1-alpha</Version>
+
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <PackageId>Rift</PackageId>
-    <Version>0.0.3</Version>
+    <PackageId>Rift.RiftEngine.Core</PackageId>
     <Authors>Rift</Authors>
     <Company>Rift</Company>
     <Product>Rift Engine</Product>
@@ -16,7 +19,7 @@
     <RepositoryUrl>https://github.com/RiftEngine/Rift</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageTags>GameEngine;Game;TextBased;TextBasedGame</PackageTags>
-    <PackageReleaseNotes>Initial Release</PackageReleaseNotes>
+    
     <NeutralLanguage>en-US</NeutralLanguage>
     <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
     <PackageLicenseExpression> GPL-3.0-or-later</PackageLicenseExpression>
