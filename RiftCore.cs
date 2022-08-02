@@ -83,6 +83,11 @@ namespace RiftEngine
             config = configuration;
         }
 
+        public static void SetTitle(string title)
+        {
+            Console.Title = title;
+        }
+
         public void AddInteraction(Interaction interaction)
         {
             interactions.Add(interaction);
@@ -151,7 +156,7 @@ namespace RiftEngine
 
                 var section = config.GetSection(nameof(Config));
                 var gameConfig = section.Get<Config>();
-                return gameConfig;
+                return new Config(gameConfig.Name, gameConfig.UseSave, gameConfig.CreatorID,gameConfig.VersionID,gameConfig.CreationDate);
             }
             catch (Exception ex)
             {
