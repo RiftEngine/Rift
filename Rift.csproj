@@ -6,11 +6,11 @@
     <Nullable>enable</Nullable>
     <PackageId>Rift</PackageId>
     <Version>0.0.3</Version>
-    <Authors>REM-Codes</Authors>
-    <Company>RiftEngine</Company>
-    <Product>Rift</Product>
+    <Authors>Rift</Authors>
+    <Company>Rift</Company>
+    <Product>Rift Engine</Product>
     <Description>A text-based game engine used to easily create non-linear and linear text-based games.</Description>
-    <Copyright>Copyright (c) 2022 RiftEngine</Copyright>
+    <Copyright>Copyright (C) 2022 Rift Development</Copyright>
     <PackageProjectUrl>https://RiftEngine.GitHub.io</PackageProjectUrl>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <RepositoryUrl>https://github.com/RiftEngine/Rift</RepositoryUrl>

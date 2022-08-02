@@ -1,4 +1,4 @@
-﻿namespace RiftEngine
+﻿namespace Rift.RiftEngine.Core
 {
     public class ConfigFileNotFoundException : Exception
     {

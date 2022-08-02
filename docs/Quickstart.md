@@ -58,10 +58,10 @@ First, add the `RiftEngine` import statement to your file, so that you can acces
 
 *Importing RiftEngine*
 ```cs
-using RiftEngine;
+using Rift.RiftEngine.Core;
 ```
 
-Now, create an instance of the `RiftEngine.Config` class. This will store your configuration data.
+Now, create an instance of the `Config` class. This will store your configuration data.
 
 *Referencing your configuration*
 ```cs
