@@ -9,15 +9,6 @@ namespace Rift.RiftEngine.Core
         public string CreatorID { get; set; }
         public string VersionID { get; set; }
         public string CreationDate { get; set; }
-
-        public Config(string name, bool useSave, string creatorID, string versionID, string creationDate)
-        {
-            Name = name;
-            UseSave = useSave;
-            CreatorID = creatorID;
-            VersionID = versionID;
-            CreationDate = creationDate;
-        }
     }
 
     public class GameConfigManager
@@ -32,7 +23,7 @@ namespace Rift.RiftEngine.Core
 
                 var section = config.GetSection(nameof(Config));
                 var gameConfig = section.Get<Config>();
-                return new Config(gameConfig.Name, gameConfig.UseSave, gameConfig.CreatorID, gameConfig.VersionID, gameConfig.CreationDate);
+                return gameConfig;
             }
             catch (Exception ex)
             {

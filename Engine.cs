@@ -34,6 +34,10 @@
 
         public static void Start()
         {
+            if(!isInitialized)
+            {
+                throw new GameNotInitializedException("The game has not been initialized.");
+            }
             if (!isStarted)
             {
                 isStarted = true;
@@ -43,7 +47,7 @@
             }
             if (gameReference != null)
             {
-                gameReference.Init();
+                gameReference.Start();
             }
             else
             {

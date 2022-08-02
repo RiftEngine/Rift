@@ -3,14 +3,14 @@
   <PropertyGroup>
 	<!--TO BE CHANGED BETWEEN RELEASES-->
 	<PackageReleaseNotes>Initial Release</PackageReleaseNotes>
-    <Version>0.0.1-alpha</Version>
+    <Version>0.0.1-beta</Version>
 
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <PackageId>Rift.RiftEngine.Core</PackageId>
     <Authors>Rift</Authors>
-    <Company>Rift</Company>
+    <Company>Rift Development</Company>
     <Product>Rift Engine</Product>
     <Description>A text-based game engine used to easily create non-linear and linear text-based games.</Description>
     <Copyright>Copyright (C) 2022 Rift Development</Copyright>

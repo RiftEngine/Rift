@@ -41,4 +41,11 @@
         public GameNotRunningException(string message) : base(message) { }
         public GameNotRunningException(string message, Exception inner) : base(message, inner) { }
     }
+
+    public class GameNotInitializedException : Exception
+    {
+        public GameNotInitializedException() { }
+        public GameNotInitializedException(string message) : base(message) { }
+        public GameNotInitializedException(string message, Exception inner) : base(message, inner) { }
+    }
 }
