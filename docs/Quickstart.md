@@ -4,7 +4,37 @@ Rift has a relatively simple frontend, so the learning curve of its most basic f
 **Note: in this quickstart guide, you will create a working *program*, but it won't be a fully fledged *game* (yet)**
 
 ## Installation
-Install Rift. (TODO: Add detailed guide and add Rift to NuGet)
+### Using the Package Manager
+1) In Visual Studio, open the *Package Manager*:
+
+`View`->`Other Windows`->`Package Manager Console`
+
+2) Once the Package Manager Console opens, run this command:
+```
+PM> Install-Package Rift -Version 0.0.3
+```
+
+### Using the .NET CLI
+1) Ensure that `dotnet` is installed
+```
+> dotnet --info
+```
+
+If it gives an error, [install dotnet](https://dotnet.microsoft.com/en-us/download)
+
+2) Install the package
+```
+> dotnet add package Rift --version 0.0.3
+```
+
+### Using PackageReference
+For projects that support [PackageReference](https://docs.microsoft.com/en-us/nuget/consume-packages/package-references-in-project-files), copy this XML node into the project file to reference the package.
+```xml
+<PackageReference Include="Rift" Version="0.0.3" />
+```
+
+### Other methods
+To use methods not supported by NuGet, visit [Rift's NuGet page](https://www.nuget.org/packages/Rift)
 
 ## Hello ~~World~~ Rift
 In this section, you will create your first `Hello World` style program using Rift. 
@@ -58,10 +88,10 @@ First, add the `RiftEngine` import statement to your file, so that you can acces
 
 *Importing RiftEngine*
 ```cs
-using RiftEngine;
+using Rift.RiftEngine.Core;
 ```
 
-Now, create an instance of the `RiftEngine.Config` class. This will store your configuration data.
+Now, create an instance of the `Config` class. This will store your configuration data.
 
 *Referencing your configuration*
 ```cs
