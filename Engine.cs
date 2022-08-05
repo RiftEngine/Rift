@@ -47,13 +47,13 @@
             }
             if (gameReference != null)
             {
+                Events.GameStart.Trigger();
                 gameReference.Start();
             }
             else
             {
                 throw new GameReferenceNullException("The game reference is null.");
             }
-            Events.GameStart.Trigger();
         }
 
         public static void Stop()
@@ -67,12 +67,12 @@
             }
             if (gameReference != null)
             {
+                Events.GameStop.Trigger();
                 gameReference.Stop();
             } else
             {
                 throw new GameReferenceNullException("The game reference was null.");
             }
-            Events.GameStop.Trigger();
         }
     }
 }

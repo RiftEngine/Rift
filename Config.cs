@@ -9,10 +9,7 @@ namespace Rift.RiftEngine.Core
         public string CreatorID { get; set; }
         public string VersionID { get; set; }
         public string CreationDate { get; set; }
-    }
 
-    public class GameConfigManager
-    {
         public static Config ReadGameConfiguration(string configFilePath)
         {
             try
