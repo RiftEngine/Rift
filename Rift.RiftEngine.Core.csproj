@@ -2,8 +2,8 @@
 
   <PropertyGroup>
 	<!--TO BE CHANGED BETWEEN RELEASES-->
-	<PackageReleaseNotes>Initial Release</PackageReleaseNotes>
-    <Version>0.0.1-beta</Version>
+	<PackageReleaseNotes>Parameterized Interactions</PackageReleaseNotes>
+    <Version>0.0.1.2-alpha</Version>
 
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
